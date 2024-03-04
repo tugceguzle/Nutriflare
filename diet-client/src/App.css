@@ -1,0 +1,435 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* login ve register  */
+.btn-login {
+  @apply w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-thorange rounded-lg hover:bg-thorangelight focus:outline-none focus:bg-thorangelight focus:ring focus:ring-thorange focus:ring-opacity-50 dark:bg-thorangelight  dark:hover:bg-thorange;
+}
+
+.label-login {
+  @apply text-sm text-gray-600 dark:text-gray-200;
+}
+.login-input {
+  @apply block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700
+    focus:border-cyan-400 dark:focus:border-cyan-400 focus:ring-cyan-400 focus:outline-none 
+    focus:ring focus:ring-opacity-40;
+}
+.register-input {
+  @apply block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40;
+}
+.register-date{
+  @apply block w-full px-5 py-3 mt-2 text-gray-400 bg-white border border-gray-200 rounded-lg  dark:bg-gray-900 dark:text-gray-600 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40
+}
+.register-form{
+  @apply grid grid-cols-1 gap-6 mt-8 md:grid-cols-2
+}
+.register-p{
+  @apply mt-4 text-gray-500 dark:text-gray-400
+}
+.register-buton {
+  @apply flex items-center justify-between w-full px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-thorange rounded-lg hover:bg-thorangelight focus:outline-none focus:ring focus:ring-thlight focus:ring-opacity-50 dark:bg-thorangelight dark:hover:bg-thorange;
+}
+.register-h{
+  @apply text-2xl font-semibold tracking-wider text-gray-800 capitalize dark:text-white flex items-center
+}
+.register-div{
+  @apply flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5
+}
+.register-label {
+  @apply block mb-2 text-sm text-gray-600 dark:text-gray-200;
+}
+/* Users.js */
+.users-th {
+  @apply px-2 py-2 text-sm  font-medium  text-center rtl:text-right text-gray-800 dark:text-gray-400;
+}
+.users-td {
+  @apply px-2 py-4 text-sm text-gray-600 dark:text-gray-300 whitespace-nowrap text-center;
+}
+.users-span {
+  @apply px-3 py-1 text-lg text-thorange rounded-full dark:bg-gray-800 bg-orange-100/60;
+}
+/* Recipes.js  */
+.rc-div {
+  @apply h-full bg-white  px-2 pt-2 pb-8 rounded-lg overflow-hidden text-center relative;
+}
+.rc-h {
+  @apply text-xl font-medium text-gray-900 mt-5;
+}
+.rc-span {
+  @apply text-sm px-4 text-gray-600 dark:text-gray-400 font-medium;
+}
+.rc-link {
+  @apply text-thorange inline-flex items-center mt-3;
+}
+.rc-svg {
+  @apply flex items-center justify-center mt-4;
+}
+.rc-star {
+  @apply flex items-center justify-center my-2 space-x-1;
+}
+.rc-img {
+  @apply object-cover object-center h-full w-full;
+}
+.rc-p {
+  @apply text-base leading-relaxed mt-2;
+}
+.rc-div-cont{
+  @apply text-center font-medium text-2xl text-gray-700 m-6 lg:mx-24 lg:px-2 md:mx-36
+}
+.rc-h-div{
+  @apply md:flex md:-mx-3 md:items-center md:justify-between m-6
+}
+.rc-h-two{
+  @apply  text-xl font-semibold tracking-tight text-gray-800 md:mx-3 xl:text-2xl dark:text-white
+}
+.rc-a-div{
+  @apply mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto
+}
+.rc-a-span{
+  @apply inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-thorange rounded-lg gap-x-3 hover:bg-thorangelight focus:ring focus:ring-gray-300 focus:ring-opacity-80
+}
+
+/* DietList.js  */
+.dl-th {
+  @apply px-12 py-3.5 text-sm font-medium text-center rtl:text-right text-gray-800 dark:text-gray-400 lg:w-1/6;
+}
+.dl-td {
+  @apply px-2 py-1 text-sm text-gray-600 dark:text-gray-300 whitespace-nowrap align-top;
+}
+.dl-p {
+  @apply px-1 m-4 py-1 text-xs text-thorange  rounded-xl dark:bg-gray-800 bg-orange-100/60;
+}
+.dl-li {
+  @apply p-1 list-disc  text-sm;
+}
+.dl-tr-end {
+  @apply px-2 py-1 text-xs text-pink-500 rounded-full dark:bg-gray-800 bg-pink-100/60;
+}
+.dl-end {
+  @apply px-4 py-4 text-sm text-gray-600 dark:text-gray-300 whitespace-nowrap;
+}
+.dl-header {
+  @apply text-center  font-medium text-2xl text-gray-700 m-6;
+}
+.dl-day{
+  @apply px-1 m-4 py-1 text-xl text-center text-black rounded-xl
+}
+.dl-sec{
+  @apply container px-4 mx-auto
+}
+.dl-div{
+  @apply flex flex-col mt-6
+}
+.dl-div-two{
+  @apply -mx-4 -my-2 overflow-x-auto 
+}
+.dl-div-three{
+  @apply inline-block min-w-full py-2 align-middle
+}
+.dl-div-four{
+  @apply overflow-hidden border border-gray-200  md:rounded-lg
+}
+
+/* UserCalories.js  */
+/* dl-header rc-link */
+.cal-th {
+  @apply px-12 py-3.5 text-sm font-medium text-center rtl:text-right text-gray-800 dark:text-gray-400 lg:w-1/5;
+}
+.cal-td {
+  @apply px-4 py-4 text-sm text-gray-600 dark:text-gray-300 whitespace-nowrap;
+}
+.cal-span {
+  @apply px-3 py-1 text-lg text-thorange rounded-full dark:bg-gray-800 bg-orange-100/60;
+}
+.cal-desc {
+  @apply px-3 py-1 text-sm rounded-full dark:bg-gray-800;
+}
+.cal-h{
+  @apply text-2xl font-medium text-gray-900  mb-2
+}
+.cal-g-div{
+  @apply md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col
+}
+.cal-date{
+  @apply px-1 py-1 text-lg text-center text-black  rounded-xl
+}
+.cal-td-div{
+  @apply flex w-28 py-1.5 px-4 transition-colors bg-orange-50 border font-medium border-orange-50  text-thorange rounded-lg disabled:opacity-50 m-auto
+}
+/* UserHome.js  */
+/* rc-link  rc-p rc-h rc-star rc-span rc-img*/
+.uh-p {
+  @apply font-medium text-gray-500;
+}
+.uh-h {
+  @apply sm:text-lg text-2xl font-medium text-gray-700 mb-3;
+}
+.uh-h-o {
+  @apply tracking-widest text-xs  font-medium text-thorange mb-6;
+}
+.uh-div {
+  @apply p-2 lg:w-1/3;
+}
+.uh-div-two {
+  @apply h-full bg-white shadow-md px-8 pt-8 pb-8 rounded-lg overflow-hidden text-center relative;
+}
+.uh-lbl {
+  @apply leading-7 text-sm text-gray-600;
+}
+.uh-input {
+  @apply w-full bg-white rounded border border-thorange focus:border-thorangelight focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out leading-8;
+}
+.uh-btn {
+  @apply text-white bg-thorange border-0 py-2 px-6 focus:outline-none hover:bg-thorangelight rounded text-lg;
+}
+.uh-flex{
+  @apply flex justify-center items-center
+}
+.uh-img-div{
+  @apply w-28 h-28 overflow-hidden ring-2 ring-offset-4 ring-thorange  rounded-full bg-white flex justify-center items-center
+}
+.uh-img{
+  @apply object-cover h-full 
+}
+.uh-bar-div{
+  @apply w-full bg-white rounded-full  dark:bg-gray-700 ring-2 ring-offset-2 ring-thorange
+}
+.uh-bar{
+  @apply bg-thorange text-xs font-medium text-white text-center px-0.5 py-1 my-5 leading-none rounded-full
+}
+.uh-form-div{
+  @apply flex flex-col md:ml-auto w-full mt-8 md:mt-0
+}
+.uh-div-cont{
+  @apply mx-20 m-auto overflow-hidden bg-white rounded-lg shadow-sm 
+}
+.uh-div-flex{
+  @apply py-8 flex flex-wrap md:flex-nowrap
+}
+.uh-recipe{
+  @apply flex flex-wrap justify-center items-center -m-4
+}
+
+/* admin home  */
+.ad-h {
+  @apply font-medium text-3xl text-gray-900;
+}
+.ad-card {
+  @apply bg-white px-4 py-6 rounded-lg;
+}
+.ad-div {
+  @apply p-4 md:w-1/4 sm:w-1/2 w-full;
+}
+
+
+/* footer  */
+.footer-btn {
+  @apply flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-colors duration-200 bg-thorange border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-thorangelight dark:text-gray-200 dark:border-gray-700;
+}
+
+/* User Water Detail  */
+.uwt-btn {
+  @apply inline-flex items-center justify-center space-x-2 py-1.5 px-4 transition-colors bg-gray-50 border active:bg-orange-800 font-medium border-gray-200 hover:text-white text-thorange hover:border-orange-700 rounded-lg hover:bg-orange-600 disabled:opacity-50;
+}
+.uwt-close {
+  @apply w-full px-4 py-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40;
+}
+
+/* Users  */
+.u-btn {
+  @apply py-1.5 px-4 transition-colors bg-gray-50 border active:bg-orange-800 font-medium border-gray-200 hover:text-white text-thorange hover:border-orange-700 rounded-lg hover:bg-orange-600 disabled:opacity-50;
+}
+.u-btn-div{
+  @apply w-10 h-10 overflow-hidden border-2 border-thorange rounded-full bg-white flex justify-center items-center
+}
+.u-header{
+  @apply text-center font-medium text-2xl text-gray-700 m-6
+}
+
+/* Update Recipe  */
+.ur-input {
+  @apply block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring;
+}
+.ur-add {
+  @apply block w-full px-4 py-2 mt-2 text-white bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600;
+}
+.ur-upd {
+  @apply px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600;
+}
+
+/* Profile.js  */
+.p-input {
+  @apply block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring
+}
+.p-radio{
+  @apply px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400  focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring
+}
+.p-sec{
+  @apply max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md
+}
+.p-h{
+  @apply text-lg font-semibold text-center text-gray-700 capitalize mt-2 mb-4
+}
+.p-img{
+  @apply object-cover w-20 h-20 rounded-full ring-2 ring-offset-4 ring-thorange
+}
+.p-a{
+  @apply px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600
+}
+
+/* AddList.js  */
+.al-sec{
+  @apply max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md mt-10
+}
+.al-h{
+  @apply text-lg font-semibold text-center text-gray-700 capitalize mt-2 mb-4
+}
+.al-h-three{
+  @apply font-semibold text-white capitalize mb-2 bg-orange-400 rounded-lg p-2
+}
+.al-grid{
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4
+}
+.al-meal-div{
+   @apply mb-4 border border-orange-500 rounded-md p-4
+}
+.al-h-four{
+  @apply  font-semibold text-gray-600 mb-1 text-center
+}
+.al-input{
+  @apply ml-2 block w-16 px-2 py-1 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring
+}
+.al-food{
+  @apply block w-full px-2 py-1 mt-2 text-white bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600
+}
+.al-btn{
+  @apply px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600
+}
+.al-down{
+  @apply px-4 py-2 text-white bg-thorange rounded-full hover:bg-thorangelight focus:outline-none focus:bg-thorangelight
+}
+.al-food-input{
+  @apply block w-full px-2 py-1 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring
+}
+/* AdminHome  */
+.ad-sec{
+  @apply text-gray-600  mt-6
+}
+.ad-cont{
+  @apply container px-5 py-4 mx-auto
+}
+.ad-flex{
+  @apply flex flex-wrap -m-4 text-center
+}
+.ad-h-two{
+  @apply text-2xl font-medium text-gray-900 mb-2
+}
+.ad-graph{
+  @apply md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col
+}
+.ad-div-two{
+  @apply py-8 flex flex-wrap md:flex-nowrap
+}
+.ad-div-three{
+  @apply m-auto overflow-hidden bg-white rounded-lg shadow-sm
+}
+
+/* MODAL  */
+.modal-bg{
+  @apply fixed inset-0 bg-black
+}
+.modal-cont{
+  @apply fixed inset-0 z-10 overflow-y-auto
+}
+.modal-div{
+  @apply flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0
+}
+.modal-span{
+  @apply hidden sm:inline-block sm:h-screen sm:align-middle
+}
+.modal-div-two{
+  @apply relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:align-middle
+}
+.modal-h-three{
+  @apply text-lg font-medium leading-6 text-gray-800 capitalize
+}
+.modal-input{
+  @apply block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring
+}
+.modal-close{
+  @apply w-full px-4 py-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40
+}
+.modal-add{
+  @apply w-full px-4 py-2 mt-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-thorange rounded-md sm:mt-0 sm:w-1/2 sm:mx-2 hover:bg-orange-500 focus:outline-none focus:ring focus:ring-orange-300 focus:ring-opacity-40
+}
+.modal-btn-div{
+  @apply mt-4 sm:flex sm:items-center sm:-mx-2
+}
+
+/* AddRecipe  */
+.ar-h{
+  @apply text-lg font-semibold text-center text-gray-700 capitalize mt-2 mb-4
+}
+.ar-form{
+  @apply grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2
+}
+.ar-btn-div{
+  @apply flex justify-end items-end
+}
+.ar-sec{
+  @apply max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md my-16
+}
+/* RecipeDetail  */
+.rd-cont{
+  @apply container mx-auto mt-10
+}
+.rd-flex{
+  @apply flex flex-wrap justify-center
+}
+.rd-flex-two{
+  @apply flex items-center justify-center
+}
+.rd-img-div{
+  @apply rounded-lg h-52 w-64 overflow-hidden m-4
+}
+.rd-h-div{
+  @apply bg-orange-500 text-white rounded-tl-lg rounded-tr-lg p-2 text-center
+}
+.rd-div{
+  @apply bg-white rounded-bl-lg rounded-br-lg p-6 shadow-lg
+}
+
+/* Feedback  */
+.fb-input{
+  @apply w-full px-4 py-2 border rounded-md focus:outline-none focus:border-thorange
+}
+.fb-btn{
+  @apply w-full px-4 py-2 bg-thorange text-white rounded-md hover:bg-thorangelight focus:outline-none focus:ring focus:ring-thorange focus:ring-opacity-80
+}
+ /* Notfound  */
+ .nf-sec{
+  @apply container h-1/2 px-6 py-12 mx-auto lg:flex lg:items-center lg:gap-12
+ }
+ .nf-p{
+  @apply text-sm font-medium text-thorange
+ }
+ .nf-h{
+  @apply mt-3 text-2xl font-semibold text-gray-800
+ }
+ .nf-img-div{
+  @apply relative w-full mt-12 lg:w-1/2 lg:mt-0
+ }
+
+ .footer-link{
+  @apply text-gray-600 transition-colors duration-300 hover:underline hover:text-blue-500
+ }
+ .nav-a{
+  @apply px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform lg:mt-0 hover:bg-gray-100
+ }
+ .nav-a-two{
+  @apply px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 hover:bg-gray-100
+ }
+ .nav-color{
+  @apply border-thorange rounded-none border-b-2
+ }
